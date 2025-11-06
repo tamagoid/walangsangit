@@ -9,8 +9,8 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://djsiddz.github.io",
-  base: "/space-ahead",
+  site: "https://tamagoid.github.io",
+  base: "/walangsangit",
 
   integrations: [
     swup({

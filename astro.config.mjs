@@ -5,10 +5,13 @@ import swup from "@swup/astro";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://djsiddz.github.io",
   base: "/space-ahead",
+
   integrations: [
     swup({
       theme: ["overlay", { direction: "to-top" }],
@@ -26,6 +29,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: netlify(),
 });
 
 //swup theme variations:
